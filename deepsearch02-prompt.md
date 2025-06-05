@@ -1,48 +1,70 @@
-# Grup Projesi: Nmap ile Güncel Ağ Keşfi ve Port Tarama Teknikleri (2025)
+# 🔬 Araştırma-Geliştirme Promptu: "Nmap ile Aktif ve Pasif Ağ Haritalaması: Çok Katmanlı Bir Yaklaşım"
 
-## Araştırma Konusu
+## 🎯 Genel Amaç
+Bu projede, Nmap kullanılarak farklı ağ segmentlerinin çok katmanlı olarak haritalanması hedeflenmektedir. Sadece basit port taramaları değil, aynı zamanda OS fingerprinting, versiyon analizi, zamanlama davranışları, firewall atlatma teknikleri ve Nmap Scripting Engine (NSE) ile zafiyet keşfi dahil olmak üzere kapsamlı bir bilgi toplama süreci tasarlanacaktır.
 
-2025 yılı itibarıyla, Nmap aracı kullanılarak gerçekleştirilen ağ keşfi ve port tarama süreçlerinde öne çıkan **10 modern tekniği veya yaklaşımsal eğilimi** araştırın ve sınıflandırın.
+---
 
-## Teslim Formatı
+## 🧠 Araştırma Soruları
 
-Her teknik için şu başlıkları ayrı ayrı doldurun:
+### 1. Ağ Haritalama Stratejileri
+- Nmap ile hangi durumlarda aktif, hangi durumlarda pasif yöntemler tercih edilmelidir?
+- Büyük ölçekli bir ağda segment bazlı keşif nasıl planlanır?
 
-- **Tekniğin Adı:**  
-- **Kategorisi:** (Örn: Ağ haritalama, gizlilik odaklı tarama, yüksek hızlı tarama, vs.)  
-- **Çalışma Prensibi:**  
-- **Uygulama Aracı / Betiği:** (Örn: Nmap script’i, özel parametre, eklenti aracı)  
-- **2025'e Özgü Değeri:**  
-- **Siber Güvenlik Açısından Olası Kullanım Alanları:**  
-- **Referans / Kaynak Linki veya Yayın Adı:**
+### 2. Tarama Teknikleri ve Zamanlama
+- `-T0` ila `-T5` zamanlama seviyelerinin tespit edilebilirlik ve performans açısından etkileri nedir?
+- IDS/IPS sistemlerinden kaçınmak için en uygun zamanlama ayarları nelerdir?
 
-## İçerik Kapsamı
+### 3. Firewall/IPS Atlatma ve Şifrelenmiş Trafik Analizi
+- `--data-length`, `--source-port`, `--badsum`, `-f` gibi bayraklarla yapılan taramaların etkileri nelerdir?
+- TLS/SSL üzerinden çalışan servislerde portların arkasına saklanan bilgileri tespit etmek mümkün müdür?
 
-- İnceleme sadece **Nmap ve Nmap destekli çözümlerle** sınırlı kalmalıdır.  
-- Tespit edilen tekniklerin **2024 sonrası** gelişen veya yaygınlaşan trendler olması beklenir.  
-- Aşağıdaki örnek konulara değinilebilir:  
-  - UDP tarama yenilikleri  
-  - Firewall / IDS atlatma yöntemleri  
-  - IPv6 ağlarında tarama gelişmeleri  
-  - NSE (Nmap Scripting Engine) ile özel kullanım senaryoları  
-  - Pasif tarama yaklaşımları  
+### 4. Gerçek Senaryoda Uygulama
+- Sanal bir test laboratuvarı (örneğin: Metasploitable2, DVWA, custom pfSense FW) üzerinde örnek keşif ve analiz süreci
+- Elde edilen verilerin log analiziyle eşleştirilmesi
 
-## Değerlendirme Kriterleri
+### 5. Etik, Yasal ve Operasyonel Boyut
+- Nmap taramalarının yasal sınırları nelerdir?
+- Red Team ve Blue Team bakış açılarıyla bu taramaların kullanımı nasıl farklılaşır?
 
-- Teknik açıklamanın doğruluğu ve güncelliği  
-- Kaynakların güvenilirliği ve akademik ya da sektörel geçerliliği  
-- Her tekniğin anlaşılır ve karşılaştırılabilir şekilde yazılmış olması  
-- Teslimin belirtilen formata uygunluğu  
+---
 
-## Kaynak Kullanımı
+## 🔨 Pratik Uygulama Alanları
 
-Lütfen teknik bilgileri aşağıdaki gibi **güvenilir kaynaklara dayandırın**:
+- Kurumsal bir ağda güvenlik denetimi
+- Kendi ağınızda Red Team simülasyonu
+- Penetrasyon testi öncesi bilgi toplama fazı
+- Honeypot sistemlerinin tespiti ve analizi
 
-- Akademik yayınlar (IEEE, Springer, ACM, vs.)  
-- Siber güvenlik firmalarının raporları (Rapid7, Tenable, SANS, vs.)  
-- Nmap resmi dökümantasyonu ve NSE script deposu  
-- Teknik bloglar (güncel ve uzman kişilerce yazılmış)  
+---
 
-## Ek Not
+## 📦 Teslim Edilmesi Beklenen Çıktılar
 
-Proje birden fazla kişi tarafından yürütülebilir. İş bölümü yapılmışsa, her öğrenci kendi araştırdığı teknikleri belirtmelidir. Teslim PDF ya da Markdown dosyası olarak yapılabilir.
+1. **Detaylı bir teknik rapor:**
+   - Kullanılan Nmap komutları ve açıklamaları
+   - Elde edilen bulgular (OS, servis, port, zafiyet vb.)
+   - Zamanlama analizi sonuçları ve IDS/IPS tespiti üzerine yorumlar
+
+2. **NSE Script kullanımı içeren mini kütüphane veya öneri listesi**
+
+3. **Geliştirilmiş özel bir Nmap komut seti veya bash wrapper script’i (opsiyonel)**
+
+4. **Varsa:** Wireshark logları veya ekran görüntüleriyle desteklenmiş vaka çalışmaları
+
+---
+
+## 🧰 Kullanılabilecek Araçlar
+
+- **Nmap** (en güncel sürüm)
+- **Wireshark** (trafik gözlemi için)
+- **Metasploitable2**, **DVWA**, **pfSense**, **Kali Linux** (test ortamı için)
+- **Python veya Bash** (otomasyon için)
+
+---
+
+## 🌐 Ekstra Derinlik için Kaynaklar
+
+- [Nmap Book (Gordon Lyon)](https://nmap.org/book/)
+- Nmap NSE Script Library: [https://nmap.org/nsedoc/](https://nmap.org/nsedoc/)
+- Offensive Security Exploit DB
+- BlackHat & DefCon sunumları (özellikle ağ keşfi ve firewall bypass üzerine)
