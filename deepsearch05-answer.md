@@ -1,3 +1,4 @@
+2025 yılı ve sonrasında yapay zeka destekli siber güvenlik alanında öne çıkan en etkili 10 teknik ve trend aşağıda detaylandırılmıştır:
 1. Yapay Zeka Destekli Anomali Tespiti ve Davranış Analizi
 
     Kullanıldığı Yer / Amacı: Ağ trafiği, kullanıcı davranışları, sistem günlükleri ve uygulama erişimleri gibi farklı veri kaynaklarındaki anormal aktiviteleri tespit ederek bilinmeyen tehditleri ve sıfır gün saldırılarını belirlemek. Ayrıca iç tehditleri ve gelişmiş kalıcı tehditleri (APT) ortaya çıkarmak için kullanılır.
