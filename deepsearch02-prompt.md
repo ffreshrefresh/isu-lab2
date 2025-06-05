@@ -1,24 +1,48 @@
-Görev:
-2025 yılı için şu araştırmayı yapmanı istiyorum:
-“Nmap kullanılarak ağ keşfi ve port tarama alanında kullanılan en etkili 10 modern tekniği veya trendi incele.”
+# Grup Projesi: Nmap ile Güncel Ağ Keşfi ve Port Tarama Teknikleri (2025)
 
-İstenen Çıktı Formatı:
-Her teknik için aşağıdaki bilgileri ver:
+## Araştırma Konusu
 
-Tekniğin Adı
+2025 yılı itibarıyla, Nmap aracı kullanılarak gerçekleştirilen ağ keşfi ve port tarama süreçlerinde öne çıkan **10 modern tekniği veya yaklaşımsal eğilimi** araştırın ve sınıflandırın.
 
-Kısa Açıklaması / Amacı
+## Teslim Formatı
 
-Uygulama Aracı (örnek: Nmap script, parametre, eklenti)
+Her teknik için şu başlıkları ayrı ayrı doldurun:
 
-2025’e Göre Önemi ve Riskleri
+- **Tekniğin Adı:**  
+- **Kategorisi:** (Örn: Ağ haritalama, gizlilik odaklı tarama, yüksek hızlı tarama, vs.)  
+- **Çalışma Prensibi:**  
+- **Uygulama Aracı / Betiği:** (Örn: Nmap script’i, özel parametre, eklenti aracı)  
+- **2025'e Özgü Değeri:**  
+- **Siber Güvenlik Açısından Olası Kullanım Alanları:**  
+- **Referans / Kaynak Linki veya Yayın Adı:**
 
-Kaynak (varsa makale, rapor, uzman yorumu)
+## İçerik Kapsamı
 
-Kapsam:
-- 2025 ve sonrasında geçerliliğini koruyan teknikler dahil edilmeli
-- Konu yalnızca ağ keşfi ve port tarama olmalı
-- Etik kullanım, savunma sistemleri ve yeni yöntemler öncelikli
+- İnceleme sadece **Nmap ve Nmap destekli çözümlerle** sınırlı kalmalıdır.  
+- Tespit edilen tekniklerin **2024 sonrası** gelişen veya yaygınlaşan trendler olması beklenir.  
+- Aşağıdaki örnek konulara değinilebilir:  
+  - UDP tarama yenilikleri  
+  - Firewall / IDS atlatma yöntemleri  
+  - IPv6 ağlarında tarama gelişmeleri  
+  - NSE (Nmap Scripting Engine) ile özel kullanım senaryoları  
+  - Pasif tarama yaklaşımları  
 
-Güvenilir Kaynaklara Dayan:
-Akademik yayınlar, sektör raporları (Rapid7, SANS, OWASP), teknik bloglar veya uzman görüşlerine dayalı olmalı. Tahmini bilgi içermemeli.
+## Değerlendirme Kriterleri
+
+- Teknik açıklamanın doğruluğu ve güncelliği  
+- Kaynakların güvenilirliği ve akademik ya da sektörel geçerliliği  
+- Her tekniğin anlaşılır ve karşılaştırılabilir şekilde yazılmış olması  
+- Teslimin belirtilen formata uygunluğu  
+
+## Kaynak Kullanımı
+
+Lütfen teknik bilgileri aşağıdaki gibi **güvenilir kaynaklara dayandırın**:
+
+- Akademik yayınlar (IEEE, Springer, ACM, vs.)  
+- Siber güvenlik firmalarının raporları (Rapid7, Tenable, SANS, vs.)  
+- Nmap resmi dökümantasyonu ve NSE script deposu  
+- Teknik bloglar (güncel ve uzman kişilerce yazılmış)  
+
+## Ek Not
+
+Proje birden fazla kişi tarafından yürütülebilir. İş bölümü yapılmışsa, her öğrenci kendi araştırdığı teknikleri belirtmelidir. Teslim PDF ya da Markdown dosyası olarak yapılabilir.
