@@ -85,8 +85,8 @@ TCP Connect taraması, açık portlara tam bağlantı kurarak tarama yapar. Fire
 - Engin Can ÜNLÜER – 2320191039  
 - Ömer Berk ERİŞ – 2320191017  
 - Doğukan KUMBASAR – 2320191026  
-- Ferhat Civelek – 2320191053  
-- Mert Çakmak – 2320191029
+- Ferhat CİVELEK – 2320191053  
+- Mert ÇAKMAK – 2320191029
 
 ---
 
