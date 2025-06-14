@@ -1,0 +1,5 @@
+# Proje Bağımlılıkları
+# Python standart kütüphanesi ve sistem Nmap kurulumu kullanılır.
+# Harici Python paketleri gerekmez.
+# Opsiyonel: python-nmap kullanmak isterseniz:
+# python-nmap>=0.6.1
