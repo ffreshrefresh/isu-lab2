@@ -1,95 +1,102 @@
-# NmapEducator – Terminal Tabanlı Nmap Eğitim Aracı
+# ✨ NmapEducator – Terminal Tabanlı Nmap Eğitim Aracı
 
-## 📌 Proje Tanımı
-
-NmapEducator, Nmap'in temel tarama komutlarını öğretmek amacıyla geliştirilen etkileşimli bir terminal uygulamasıdır. Kullanıcıdan alınan seçimler doğrultusunda Nmap komutları çalıştırılır, çıktılar gösterilir ve ardından açıklayıcı bilgiler sunularak öğrenme desteklenir.
+**NmapEducator**, ağ güvenliği ve port tarama tekniklerini interaktif bir şekilde öğrenmenizi sağlayan, zengin özelliklere sahip bir CLI aracıdır.
 
 ---
 
-## 🎯 Amaç
-
-Ağ güvenliğine giriş yapan kullanıcıların:
-- Nmap komutlarını doğrudan deneyimlemesi,
-- Her komutun işlevini ve çıktısını öğrenmesi,
-- Gerçek örneklerle ağ tarama becerilerini geliştirmesi amaçlanmıştır.
-
----
-
-## ⚙️ Özellikler
-
-- Etkileşimli terminal menüsü
-- Kullanıcıdan hedef IP alma
-- 7 farklı tarama türü:
-  - Ping Taraması (`-sn`)
-  - TCP Taraması (`-sT`)
-  - SYN Taraması (`-sS`)
-  - OS Tespiti (`-O`)
-  - Servis Versiyon Tespiti (`-sV`)
-  - Script Taraması (`--script vuln`)
-  - Hepsi Bir Arada
-- Tarama sonrası açıklayıcı bilgi sunumu
-- Tüm çıktılar `scan_log.txt` dosyasına kaydedilir
+## 📋 İçindekiler
+1. [Özellikler](#-özellikler)  
+2. [Demo](#-demo)  
+3. [Kurulum](#-kurulum)  
+4. [Kullanım](#-kullanım)  
+5. [Ekip](#-ekip)  
+6. [Lisans](#-lisans)  
 
 ---
 
-## 🚀 Kurulum ve Kullanım
+## 🌟 Özellikler
 
-### Gereksinimler:
-- Python 3
-- Nmap yüklü olmalıdır (`sudo apt install nmap`)
+- 🚀 **Hızlı Başlangıç:** Tek komutla menü tabanlı tarama  
+- 🖥️ **Çeşitli Modüller:** Ping, TCP/SYN, OS tespiti, servis versiyonu  
+- 🔍 **Script Taraması:** Vuln, Web Enum, WAF fingerprint  
+- 🌐 **IPv6 & IoT:** IPv6 ping, UPnP & CoAP taramaları  
+- 🕒 **Zamanlama Şablonları:** Paranoid’den Insane’e 6 mod  
+- 📂 **OpenVAS Export:** Nmap çıktısını direkt XML formatına aktar  
+- 🛡️ **WAF & OSINT:** Web uygulama duvarı tespiti, hedef okuma  
+- 🔔 **Anomali Tespiti:** Önceki ve sonraki taramaları karşılaştır  
+- 🧠 **Tehdit İstihbaratı:** Açık portlara MITRE ATT&CK TTP eşlemesi  
+- 📝 **Loglama:** `scan_log.txt` ile tüm tarama geçmişi saklanır  
 
-### Kurulum:
+---
+
+## 🖥️ Demo
+
 ```bash
-git clone https://github.com/kullaniciadi/nmapeducator.git
-cd nmapeducator
-```
+$ python3 nmapeducator.py
 
-### Çalıştırmak için:
-```bash
-python3 nmapeducator.py
-```
+=== NmapEducator ===
+Ağ tarama tekniklerini öğrenmek için bir seçim yapın.
 
----
-
-## 💡 Örnek Kullanım
-
-```
-NmapEducator'a hoş geldiniz.
-
-Lütfen gerçekleştirmek istediğiniz taramayı seçin:
-1) Ping Taraması
-2) TCP Taraması
+1) Ping Taraması (-sn)
+2) TCP Taraması (-sT)
 ...
-Seçiminiz: 2
+```
 
-Lütfen hedef IP adresini girin: scanme.nmap.org
-[Tarama Başlatıldı: nmap -sT scanme.nmap.org]
+<p align="center">
+  <img width="600" src="https://user-images.githubusercontent.com/placeholder/demo.gif" alt="Demo GIF">
+</p>
 
--- Çıktı görüntülenir --
+---
 
-Açıklama:
-TCP Connect taraması, açık portlara tam bağlantı kurarak tarama yapar. Firewall’lar tarafından kolayca tespit edilebilir.
+## ⚙️ Kurulum
+
+1. Repoyu klonlayın:
+    ```bash
+    git clone https://github.com/ffreshrefresh/isu-lab2.git
+    cd isu-lab2
+    ```
+2. Gerekli modülleri yükleyin (isteğe bağlı):
+    ```bash
+    pip3 install -r requirements.txt
+    ```
+3. Uygulamayı çalıştırın:
+    ```bash
+    chmod +x nmapeducator.py
+    ./nmapeducator.py
+    ```
+
+---
+
+## 🎯 Kullanım
+
+- Menüyü görüntüleyip seçim yapın.  
+- Hedef IP/domain girin.  
+- Çıktıyı görün ve `scan_log.txt` dosyasına kaydedin.
+
+```bash
+Seçiminiz: 9
+Zamanlama Modları:
+0) Paranoid
+...
+Seçiminiz: 3
+Hedef IP/domain girin: 192.168.1.1
+...
 ```
 
 ---
 
-## 📂 Çıktılar
+## 👥 Ekip
 
-- Tüm tarama sonuçları `scan_log.txt` dosyasında saklanır.
-- Her kayıtta tarih, hedef IP ve tarama tipi bilgisi bulunur.
-
----
-
-## 👥 Geliştirici Ekip
-
-- Engin Can ÜNLÜER – 2320191039  
-- Ömer Berk ERİŞ – 2320191017  
-- Doğukan KUMBASAR – 2320191026  
-- Ferhat CİVELEK – 2320191053  
-- Mert ÇAKMAK – 2320191029
+| İsim                | Öğrenci No   |
+|---------------------|--------------|
+| Engin Can ÜNLÜER    | 2320191039   |
+| Ömer Berk ERİŞ      | 2320191017   |
+| Doğukan KUMBASAR    | 2320191026   |
+| Ferhat CİVELEK      | 2320191053   |
+| Mert ÇAKMAK         | 2320191029   |
 
 ---
 
 ## 📄 Lisans
 
-Bu proje yalnızca eğitim amaçlıdır. Gerçek sistemlere izinsiz tarama yapılmamalıdır.
+Bu proje tamamen **eğitim amaçlı**dır. İzinsiz tarama veya kötü niyetli kullanım yasaktır.
